@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="input-field">
+          <input name="login" type="text" class="validate" required>
+          <label for="login">Поле ввода 1</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field">
+          <select>
+            <option value="2">Option 1</option>
+            <option value="3">Option 2</option>
+            <option value="4">Option 3</option>
+          </select>
+          <label for="">Choose</label>
+        </div>
+      </div>
+      <label>
+        <input type="checkbox" />
+        <span>check</span>
+      </label>
+      </p>
+      <button class="waves-effect waves-light btn" name="sub" type="submit">Кнопка</button>
+    </form>
+  </div>
+  <script>
+    $('select').material_select();
+  </script>
+</body>
+
+</html>
