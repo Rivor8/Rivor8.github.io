@@ -4,7 +4,7 @@ function startup() {
   el.addEventListener("touchend", handleEnd, false);
   el.addEventListener("touchcancel", handleCancel, false);
   el.addEventListener("touchmove", handleMove, false);
-  log("initialized.");
+  log("мяв");
 }
 var ongoingTouches = new Array();
 function handleStart(evt) {
