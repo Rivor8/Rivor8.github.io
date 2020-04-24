@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- header start -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Wallpaper maker</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -32,57 +33,53 @@
       </ul>
     </div>
   </nav>
+  <!-- header end -->
   <div class="container-fluid" style="padding-top: 30px;">
     <div class="row">
       <div class="col">
         <h4>Выбрать фон</h4>
-        <!-- <div class="row row-cols-2">
-            <div class="col">
-              <img src="images\4r1uhf3WXxo.jpg" class="img-fluid" alt="...">
-            </div>
-            <div class="col">
-              <img src="images\Creative_Wallpaper__040767_.jpg" class="img-fluid" alt="...">
-            </div>
-            <div class="col">
-              <img src="images\tekstury-cveta-dlya-rabochego-stola.jpg" class="img-fluid" alt="...">
-            </div>
-            <div class="col" style="background-image: url(images\4r1uhf3WXxo.jpg);
-            height: 500px;
-            ">
-            </div>
-          </div> -->
       </div>
       <div class="col-lg-5 col-md">
         <h4>Предпросмотр</h4>
         <br>
-        <canvas width="1080" height="1920" id="cnv" style="height: 70vh; margin: 0 auto;"></canvas>
+        <canvas width="1080" height="1920" id="canvas" style="height: 70vh;"></canvas>
       </div>
       <div class="col">
         <h4>Текст</h4>
         <br>
-        <div class="form-group">
-          <label for="textWP">Текст на обоях</label>
-          <input class="form-control" id="textWP" rows="3"></input>
+        <div class="form-group te-button">
+          <button type="button" class="btn btn-primary btn-lg" onclick="newText()">+ добавить новый текст</button>
         </div>
-        <div class="form-group">
-          <label for="formControlRange">По ширине</label>
-          <input type="range" class="form-control-range" id="widthTextPos">
-        </div>
-        <div class="form-group">
-          <label for="formControlRange">По высоте</label>
-          <input type="range" class="form-control-range" id="heightTextPos">
-        </div>
-        <div class="form-group">
-          <label for="formControlRange">Поворот</label>
-          <input type="range" class="form-control-range" id="rotTextPos">
+        <div class="te-form">
+          <div class="form-group">
+            <label for="textWP">Текст на обоях</label>
+            <input class="form-control" id="textWP" rows="3"></input>
+          </div>
+          <div class="form-group">
+            <label for="formControlRange">По ширине</label>
+            <input type="range" class="form-control-range" id="widthTextPos">
+          </div>
+          <div class="form-group">
+            <label for="formControlRange">По высоте</label>
+            <input type="range" class="form-control-range" id="heightTextPos">
+          </div>
+          <div class="form-group">
+            <label for="formControlRange">Поворот</label>
+            <input type="range" class="form-control-range" id="rotTextPos">
+          </div>
+          <div class="form-group">
+            <input type="color" value="#ff0000" class="btn btn-outline-dark">
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-outline-primary" onclick="saveText()">Сохранить текст</button>
+            <button type="button" class="btn btn-outline-dark" onclick="deleteText()">Удалить</button>
+          </div>
         </div>
       </div>
     </div>
 
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
